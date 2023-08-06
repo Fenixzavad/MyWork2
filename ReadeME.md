@@ -14,3 +14,35 @@
     $ mv all_animals.txt human_friends.txt
 
 ![3-й файл](1_3.png)
+![4-й файл](1_4.png)
+
+2.Создать директорию, переместить файл туда
+
+    $ mkdir animal
+    $ mv human_friends.txt animal/
+
+![5-й файл](1_5.png) 
+
+3.Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
+    $ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+    $ sudo apt update 
+
+![6-й файл](1_6.png) 
+    $ sudo apt install mysql-server mysql-client
+    $ systemctl status mysql.service
+
+![7-й файл](1_7.png) 
+![8-й файл](1_8.png) 
+
+4.Установить и удалить deb-пакет с помощью dpkg.
+
+   $ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+   $ sudo dpkg -r mysql-apt-config
+   $ sudo dpkg --purge mysql-apt-config
+
+5.Нарисовали диаграмму, в которой есть класс родительский класс, домашние животные и вьючные животные, в составы которых в случае домашних животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные войдут: лошади, верблюды и ослы.
+Диаграмма классов -
+![9-й файл](animals-D.png)
+![10-й файл](human_friends.png)
+
+6.В MySQL репозитории создать базу данных “Друзья человека”
